@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = Resource.AppName;
+}
+<div class="row">
+    <div class="page-header">
+        <h1>
+            @ViewBag.Title
+        </h1>
+    </div>
+ 
+
+    <div class="col-sm-6" id="connections">
+        <div class="list-group" data-bind="foreach: connectedUsers">
+            <div class="list-group-item">
+                <span data-bind="text: UserName"></span>
+                <button class="pull-right btn btn-default btn-xs" data-bind="visible: CanInvite, click: $parent.invite">
+                    <i class="glyphicon glyphicon-play"></i>
+                </button>
+            </div>
+        </div>
+        <div class="alert alert-info">
+            @Resource.TotalUsers: <span class="badge" id="totalUsers" data-bind="text: totalUsers"></span>
+        </div>
+        <div data-bind="if: currentGame()">
+            <div class="text-center well">
+                <b data-bind="text: currentGame().Player1.FullName"></b><br/>
+                <span>VS</span><br />
+                <b data-bind="text: currentGame().Player2.FullName"></b>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div data-bind="if: inviteRequest">
+            <div class="alert alert-info alert-dismissable" data-bind="with: inviteRequest">
+                <p>@Resource.DoYouWantToPlay</p>
+                <p class="lead"><span data-bind="text: UserName"></span></p>
+                <p>
+                    <button class="btn btn-success" data-bind="click: ok">@Resource.Ok</button>
+                    <button class="btn btn-danger" data-bind="click: cancel">@Resource.Cancel</button>
+                    <span class="badge" data-bind="text: timer"></span>
+                </p>
+            </div>
+        </div>
+
+        <div data-bind="if: currentGame()">
+            <div id="board" data-bind="blockUI: indicator">
+                <table class="table table-bordered">
+                    <tr id="row1">
+                        <td data-cell="0" class="square"></td>
+                        <td data-cell="1" class="square v"></td>
+                        <td data-cell="2" class="square"></td>
+                    </tr>
+                    <tr id="row2">
+                        <td data-cell="3" class="square h"></td>
+                        <td data-cell="4" class="square v h"></td>
+                        <td data-cell="5" class="square h"></td>
+                    </tr>
+                    <tr id="row3">
+                        <td data-cell="6" class="square"></td>
+                        <td data-cell="7" class="square v"></td>
+                        <td data-cell="8" class="square"></td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>

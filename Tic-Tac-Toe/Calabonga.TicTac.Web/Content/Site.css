@@ -1,0 +1,73 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+#board {
+    width: 300px;
+}
+
+.v {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.h {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+td {
+    cursor: pointer;
+}
+
+.x {
+    background-image: url('/images/x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -ms-background-size: 70% 70%;
+    background-size: 70% 70%;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+.o {
+   background-image: url('/images/o.png') ;
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    -ms-background-size: 70% 70%;
+    background-size: 70% 70%;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}

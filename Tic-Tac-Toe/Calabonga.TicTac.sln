@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calabonga.TicTac.Web", "Calabonga.TicTac.Web\Calabonga.TicTac.Web.csproj", "{C3A98994-0F47-4B21-A8F5-4D7567CE27DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calabonga.TicTac.Resx", "Calabonga.TicTac.Resx\Calabonga.TicTac.Resx.csproj", "{1D4FBE9F-70ED-4DA8-81F4-45A42124CC9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3A98994-0F47-4B21-A8F5-4D7567CE27DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A98994-0F47-4B21-A8F5-4D7567CE27DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A98994-0F47-4B21-A8F5-4D7567CE27DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A98994-0F47-4B21-A8F5-4D7567CE27DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4FBE9F-70ED-4DA8-81F4-45A42124CC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4FBE9F-70ED-4DA8-81F4-45A42124CC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4FBE9F-70ED-4DA8-81F4-45A42124CC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4FBE9F-70ED-4DA8-81F4-45A42124CC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
