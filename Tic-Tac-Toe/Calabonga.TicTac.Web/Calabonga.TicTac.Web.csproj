@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -218,7 +219,6 @@
     <Compile Include="Hubs\GameManager.cs" />
     <Compile Include="Hubs\GameManagerInternal.cs" />
     <Compile Include="Hubs\IConnectedUser.cs" />
-    <Compile Include="Hubs\TicTacHub.cs" />
     <Compile Include="Hubs\UserConnectionManager.cs" />
     <Compile Include="infrastructure\CookieService.cs" />
     <Compile Include="infrastructure\WebApp.cs" />
